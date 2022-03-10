@@ -1,0 +1,54 @@
+<div class="article">
+
+<div class="title">Introdution</div>
+
+- <a href="#Relational" class="contentsItems">Relational DB</a>
+- <a href="#Key" class="contentsItems">Keys</a>
+- <a href="#Diagram" class="contentsItems">Schema Diagrams</a>
+- <a href="#Language" class="contentsItems">Relation Query Language</a>
+- <a href="#Algebra" class="contentsItems">The Relational Algebra</a>
+
+<div id="Relational" class="title">Relational DB</div>
+<div class="subtitle">Relation Schema</div>
+
+- $R=(A_1, A_2, ..., A_n)$
+- 테이블의 속성들을 명시
+
+<div class="subtitle">Relation Instance</div>
+
+- $Instance\,r=r(R)$
+- 테이블의 현재값, 행(Row)
+
+<div class="subtitle">Attributes</div>
+
+- 값의 범위(형태) domain을 가짐
+- Atomic, 하나의 값만 가짐
+- Null값, 값이 존재하지 않는 경우
+- Unordered, 순서가 없음
+
+<div class="subtitle">Tuple</div>
+
+- 실제 값, 테이블에서 한 행(Row)
+- Unordered, 순서가 없음
+
+<div id="Key" class="title">Keys</div>
+<div class="subtitle">Super Key</div>
+
+- 테이블에서 유일한 튜플을 찾을 수 있는 속성값의 집합
+- ex) {ID}, {ID, name}, etc.
+
+<div class="subtitle">Candidate Key</div>
+
+- 유일한 튜플을 찾을 수 있는 Super Key 중 Minimal
+- ex) {ID}, id 값만으로 튜플을 찾을 수 있는 경우
+- ex) {ID, name}, 무조건 둘 다 있어야 유일한 튜플을 찾을 수 있는 경우
+
+<div class="subtitle">Primary Key</div>
+- Candidate Key 중 하나
+- 주로 사용되는 키
+
+<div class="subtitle">Foreign Key</div>
+- 두 테이블을 연결하는 데에 사용하는 키
+- 테이블 A의 키를 테이블 B에 넣어서 서로 하나의 키를 가지고 검색이 가능하도록
+
+</div>
